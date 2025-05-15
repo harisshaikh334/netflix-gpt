@@ -9,17 +9,17 @@ const Body = () => {
     const appRouter = createBrowserRouter([
         {
             path: "/",
-            element: <Body></Body>
+            element: <Login />
         },
         {
             path: "/browse",
-            element: <Browse></Browse>
+            element: <Browse />
         }
         
     ])
   return (
     <div>
-        <RouterProvider  />
+        <RouterProvider  router={appRouter}/>
     </div>
   )
 }
